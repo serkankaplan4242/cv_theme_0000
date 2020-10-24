@@ -1,0 +1,182 @@
+@mixin bg {
+  background-color: #242424;
+  border-radius: 8px;
+  padding: 5px;
+  color: #ffffff;
+}
+
+//------------------Mixin--------------------------------------
+
+body {
+  background-color: #151515;
+  padding: 0px;
+  margin: 0px;
+}
+
+.profil {
+  @include bg();
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  hr {
+    width: 90%;
+    background-color: white;
+  }
+  .profil_resmi {
+    padding-top: 15px;
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border-color: #ff893a;
+      border-width: 3px;
+      border-style: solid;
+    }
+  }
+
+  .profil_ismi {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      &:last-child {
+        color: #ff893a;
+      }
+    }
+  }
+  .profil_yazi {
+    align-self: center;
+    text-align: center;
+
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.iletisim {
+  @include bg();
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  div {
+    margin-bottom: 15px;
+
+    width: 300px;
+    i {
+      color: #ff893a;
+      background-color: #4c312e;
+      padding: 15px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+}
+.efeck_yazi {
+  @include bg();
+  margin-top: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  span {
+    color: #ff893a;
+  }
+}
+.portfolyo {
+  @include bg();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  div {
+    margin: 10px;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.egitim {
+  @include bg();
+  margin-top: 10px;
+  padding: 15px;
+  div {
+    margin-bottom: 19px;
+    i {
+      color: #ff893a;
+      background-color: #4c312e;
+      padding: 15px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+}
+
+.hobi {
+  @include bg();
+  margin-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  i {
+    color: #ff893a;
+    background-color: #4c312e;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+}
+
+.yetenekler
+{
+    @include bg();
+    .row{
+        margin-bottom: 15px;
+        padding-left:10px;
+        padding-right:10px;
+        font-size: 12px;
+    }
+    .col-11
+    {
+        padding-top:5px;
+    }
+   
+}
+
+.map{
+    @include bg();
+    margin-top: 15px;
+    padding: 15px;
+    img{
+        width: 100%;
+        height: 408px;
+    };
+}
+// Large devices (desktops, less than 1200px)
+//Large devices -------------lg
+@media (max-width: 1199.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+//Medium devices-------------md
+@media (max-width: 991.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+// small devices ------------  sm
+@media (max-width: 767.98px) {
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// Extra small ------------  xs
+@media (max-width: 575.98px) {
+}
